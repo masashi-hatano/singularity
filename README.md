@@ -12,7 +12,7 @@ Once you created singularity image, you are now ready to start singularity conta
 (optional) Singularity allows you to map directories on your host system to directories within your container using bind mounts.
 This will bind `/mnt/ssd1` on the host to `/data` in the container 
 ```
-export SINGULARITY_BIND="/mnt/ssd1:/data"
+export SINGULARITY_BIND="/mnt/ssd1:$PWD/data"
 ```
 Run singularity container
 ```
