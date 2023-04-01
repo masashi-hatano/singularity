@@ -8,6 +8,13 @@ sudo singularity build pytorch2.0.sif 11.8.0-cudnn8-devel-ubuntu20.04.def
 
 ## 2. run singularity container
 Once you created singularity image, you are now ready to start singularity container based on the image.
+
+(optional) Singularity allows you to map directories on your host system to directories within your container using bind mounts.
+This will bind `/mnt/ssd1` on the host to `/data` in the container 
+```
+export SINGULARITY_BIND="/mnt/ssd1:/data"
+```
+Run singularity container
 ```
 singularity shell --nv pytorch2.0.sif
 ```
