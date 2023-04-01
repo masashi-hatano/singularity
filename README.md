@@ -19,6 +19,11 @@ Run singularity container
 singularity shell --nv pytorch2.0.sif
 ```
 
+(optional) You can change the style and color of terminal prompt in singularity container.
+```
+export PS1="(pytorch2.0)\[\e[32m\]\u@\h\[\e[39m\]:\[\e[34m\]\w\[\e[39m\]$"
+```
+
 ## References
 - [how to write a definition file](https://docs.sylabs.io/guides/latest/user-guide/definition_files.html)
 - [how to use singularity](https://tmyoda.hatenablog.com/entry/20200817/1597663325)
