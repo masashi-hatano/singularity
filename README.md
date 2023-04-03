@@ -21,7 +21,7 @@ singularity shell --nv pytorch2.0.sif
 
 (optional) You can change the style and color of terminal prompt in singularity container.
 ```
-export PS1="(pytorch2.0)\[\e[32m\]\u@\h\[\e[39m\]:\[\e[34m\]\w\[\e[39m\]$"
+export PS1="[\$(basename \$SINGULARITY_CONTAINER)]\[\e[32m\] \u@\h:\[\e[34m\]\w\[\e[39m\]$ "
 ```
 
 ## References
